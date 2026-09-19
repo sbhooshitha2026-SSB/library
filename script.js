@@ -19,4 +19,41 @@ addBookToLibrary(ReverendInsanity);
 
 addBookToLibrary(ShadowSlave);
 
+const btn1 = document.querySelector(".btn");
+
+btn1.addEventListener("click", function() {
+    
+})
+
+
+const container = document.querySelector(".container")
+
+function loop() {
+    myLibrary.forEach(function(element, index) {
+        const card = document.createElement("div");
+        const title1 = document.createElement("div");
+        const author1 = document.createElement("div");
+        const chNu = document.createElement("div");
+
+        title1.innerText = `title: ${element.title}`;
+        author1.innerText = `author: ${element.author}`;
+        chNu.innerText = `chapterNumber: ${element.chapterNumber}`;
+
+        card.appendChild(title1);
+        card.appendChild(author1);
+        card.appendChild(chNu);
+
+        container.appendChild(card);
+
+    })
+};
+
+myLibrary.forEach(function(element) {
+    console.log(element)
+})
+
+loop();
+
+
+
 console.log(myLibrary);

@@ -1,9 +1,104 @@
 
-
+@font-face {
+    font-family: "Nunito";
+    src: url(./fonts/Nunito-VariableFont_wght.ttf);
+}
 
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-weight: bold;
+    font-family: "Nunito";
+
+
+}
+
+body {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+form {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: #C77DFF;
+}
+
+fieldset {
+    border: 0px;
+}
+
+.submit-button {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    color: #FFF0FA;
+    background-color:  #6C3483;
+    width: 30%;
+    border-radius: 15px;
+    justify-self: center;
+    border: 0px;
+}
+
+.submit-button:hover {
+    background-color: #8E44AD;
+
+}
+
+.submit-button:active {
+    background-color:  #512E5F;
+}
+
+form div {
+    padding: 5px 10px;
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    color: #FFF0FA;
+    gap: 10px;
+}
+
+legend {
+    color: white;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+.interactive {
+    background-color: beige;
+    padding: 5px 10px;
+    display: grid;
+    place-items: center;
+}
+
+.interactive > button {
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    justify-content: center;
+
+    padding: 10px;
+    background-color: aqua;
+    gap: 10px;
+
+}
+
+.container > div {
+    background-color: #F8C8DC;
+    color: purple;
+}
+
+.container > div > div {
+    padding: 10px;
 }
