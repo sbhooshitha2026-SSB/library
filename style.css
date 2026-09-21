@@ -20,11 +20,19 @@ body {
     grid-auto-flow: row;
     gap: 10px;
     padding: 10px;
+    height: 100vh;
 
 }
 
-form {
+body.active {
     display: grid;
+    height: 100vh;
+    padding: 10px;
+    place-items: center;
+}
+
+form {
+    display: none;
     grid-auto-flow: row;
     justify-content: center;
     padding: 10px;
@@ -41,7 +49,7 @@ fieldset {
     padding: 5px 10px;
     color: #FFF0FA;
     background-color:  #6C3483;
-    width: 30%;
+    width: fit-content;
     border-radius: 15px;
     justify-self: center;
     border: 0px;
@@ -81,6 +89,19 @@ legend {
 .interactive > button {
     padding: 5px 10px;
     border-radius: 15px;
+    background-color: #C47A8A;
+    color: #FFF8F2;
+    border: 0px;
+    font-size: 0.9rem;
+    transform: translateX(-10px);
+}
+
+.interactive > button:hover {
+    background-color: #B76578;
+}
+
+.interactive > button:active {
+    background-color: #985366;
 }
 
 .container {
