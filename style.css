@@ -24,6 +24,20 @@ body {
 
 }
 
+.buttonD {
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+
+
+
+
+    border-radius: 15px;
+
+    
+
+}
+
 body.active {
     display: grid;
     height: 100vh;
@@ -92,8 +106,8 @@ legend {
     background-color: #C47A8A;
     color: #FFF8F2;
     border: 0px;
-    font-size: 0.9rem;
-    transform: translateX(-10px);
+    font-size: 1.4rem;
+
 }
 
 .interactive > button:hover {
@@ -113,13 +127,76 @@ legend {
     background-color: aqua;
     gap: 10px;
 
+
+    
+
 }
 
-.container > div {
+
+
+.container * {
+    font-size: 1.4rem;
+}
+
+.container > div > div > div {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container > div > div > select {
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+
+
+    border-radius: 15px;
+
+
+    text-align: center;
+    appearance: none;
+    
+}
+
+.buttonD {
+    background-color: purple;
+    color: white;
+    padding: 5px 10px;
+
+
+
+
+    border-radius: 15px;
+
+    
+
+}
+
+.card {
     background-color: #F8C8DC;
     color: purple;
+    display: flex;
+    flex-direction: column;
+
+
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 20px;
+    
 }
 
-.container > div > div {
-    padding: 10px;
+.cardTop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cardBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
